@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+      <h1>imagem dinâmica</h1>
+      <p>tente abrir esse site em varios disposiivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotos-p.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotos-m.png" 
+        type="image/png">
+        <img src="imagens/fotos-g.png" alt="image flexivel">
+    </picture>
+        <h1>reproduzindo áudio</h1>
+        <p>vamos aprendder a reproduzir áudios em html5</p>
+         <audio preload="metadata" autoplay controls loop >
+         <source src="midias/Take Me Back - NEFFEX.mp3" type="audio/mp3" >  
+         <source src="midias/Take Me Back - NEFFEX.ogg" type="audio/ogg">
+         <source src="midias/Take Me Back - NEFFEX.wav" type="audio/wav">
+         </audio>
+    <p>infelizmente seu navegador não consegue reproduzir áudio <a href="midias/Take Me Back - NEFFEX.mp3">clique aqui para abrir o arquivo mp3</a></p>
+        
+         
+</body>
+</html>
