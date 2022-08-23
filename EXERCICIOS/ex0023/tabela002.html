@@ -12,6 +12,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num { 
@@ -30,10 +48,12 @@
     </style>
 </head>
 <body>
+    
     <h1>uso de tabelas grandes</h1>
-    <!--
+    <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,10 +62,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>população das unidades federativas</CAption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col">estado</th>
+                <th scope="col" style="width:50px;">população </th>
             </tr>
         </thead>
         <tbody>
@@ -160,11 +181,13 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
-                <td>210.147.125</td>
-                <p>pesquisa feita em junho de 2020</p>
+                <th scope="row">total de habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
             </tr>
+             <p>pesquisa feita em junho de 2020</p>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente veniam sint magni sequi cumque cum ex non excepturi, perspiciatis facere pariatur quas magnam dolorum maxime sunt ducimus laborum ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea deserunt quas libero maxime soluta provident, similique labore corporis? Atque, explicabo enim quos possimus dolore nobis deserunt dolorum eaque maiores sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, necessitatibus perspiciatis quo aut ipsam praesentium voluptatibus labore illum! Necessitatibus recusandae nulla autem, neque iure consectetur? Consequuntur, delectus. Totam, fugit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum unde odit repellat accusamus voluptas dicta omnis aperiam possimus repellendus, quos neque ea ad perferendis similique aliquam laudantium aut excepturi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente veniam sint magni sequi cumque cum ex non excepturi, perspiciatis facere pariatur quas magnam dolorum maxime sunt ducimus laborum ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea deserunt quas libero maxime soluta provident, similique labore corporis? Atque, explicabo enim quos possimus dolore nobis deserunt dolorum eaque maiores sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, necessitatibus perspiciatis quo aut ipsam praesentium voluptatibus labore illum! Necessitatibus recusandae nulla autem, neque iure consectetur? Consequuntur, delectus. Totam, fugit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum unde odit repellat accusamus voluptas dicta omnis aperiam possimus repellendus, quos neque ea ad perferendis similique aliquam laudantium aut excepturi.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente veniam sint magni sequi cumque cum ex non excepturi, perspiciatis facere pariatur quas magnam dolorum maxime sunt ducimus laborum ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea deserunt quas libero maxime soluta provident, similique labore corporis? Atque, explicabo enim quos possimus dolore nobis deserunt dolorum eaque maiores sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, necessitatibus perspiciatis quo aut ipsam praesentium voluptatibus labore illum! Necessitatibus recusandae nulla autem, neque iure consectetur? Consequuntur, delectus. Totam, fugit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum unde odit repellat accusamus voluptas dicta omnis aperiam possimus repellendus, quos neque ea ad perferendis similique aliquam laudantium aut excepturi.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente veniam sint magni sequi cumque cum ex non excepturi, perspiciatis facere pariatur quas magnam dolorum maxime sunt ducimus laborum ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea deserunt quas libero maxime soluta provident, similique labore corporis? Atque, explicabo enim quos possimus dolore nobis deserunt dolorum eaque maiores sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, necessitatibus perspiciatis quo aut ipsam praesentium voluptatibus labore illum! Necessitatibus recusandae nulla autem, neque iure consectetur? Consequuntur, delectus. Totam, fugit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum unde odit repellat accusamus voluptas dicta omnis aperiam possimus repellendus, quos neque ea ad perferendis similique aliquam laudantium aut excepturi.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente veniam sint magni sequi cumque cum ex non excepturi, perspiciatis facere pariatur quas magnam dolorum maxime sunt ducimus laborum ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea deserunt quas libero maxime soluta provident, similique labore corporis? Atque, explicabo enim quos possimus dolore nobis deserunt dolorum eaque maiores sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, necessitatibus perspiciatis quo aut ipsam praesentium voluptatibus labore illum! Necessitatibus recusandae nulla autem, neque iure consectetur? Consequuntur, delectus. Totam, fugit maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum unde odit repellat accusamus voluptas dicta omnis aperiam possimus repellendus, quos neque ea ad perferendis similique aliquam laudantium aut excepturi.</p>
 </body>
 </html>
